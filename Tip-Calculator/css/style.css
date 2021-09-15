@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bill-card {
+  background-color: hsl(0, 0%, 100%);
+  width: 800px;
+  height: 500px;
+  margin-top: 7rem;
+  border-radius: 15px;
+  color: hsl(184, 14%, 56%);
+  position: relative;
+  padding-left: 20px;
+}
+.bill-card h5 {
+  font-weight: 700;
+}
+#input-bill,
+#people-numbers {
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 24px;
+}
+.bill-btn,
+.custom-btn {
+  padding: 5px 35px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  width: 100px;
+  font-weight: 700;
+}
+.reset-btn {
+  padding: 5px 35px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  background-color: hsl(172, 67%, 45%);
+  margin: 100px 0 0 45px;
+}
+.bill-btn {
+  background-color: hsl(183, 100%, 15%);
+}
+.custom-btn {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(184, 14%, 56%);
+}
+#dollar {
+  position: absolute;
+  top: 72px;
+  left: 40px;
+}
+#person {
+  position: absolute;
+  top: 345px;
+  left: 40px;
+}
+.tipTotal-box {
+  width: 350px;
+  height: 400px;
+  background-color: hsl(183, 100%, 15%);
+  margin-top: 3rem;
+  border-radius: 15px;
+}
+.tiptotal-heading {
+  color: #fff;
+}
+.tiptotal-price {
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+}
