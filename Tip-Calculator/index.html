@@ -31,8 +31,13 @@
           <div class="row">
             <div class="col-md-6 mt-4">
               <h5>Bill</h5>
-              <img src="./images/icon-dollar.svg" id="dollar" alt="" />
-              <input type="text" id="input-bill" class="w-100" placeholder="" />
+              <!-- <img src="./images/icon-dollar.svg" id="dollar" alt="" /> -->
+              <input
+                type="text"
+                id="input-bill"
+                class="w-100"
+                placeholder="$"
+              />
 
               <h5 class="my-4">Select Tip %</h5>
               <button class="bill-btn" id="tip5">5%</button>
@@ -46,8 +51,13 @@
               </div>
 
               <h5 class="mt-4">Number of People</h5>
-              <img src="./images/icon-person.svg" id="person" alt="" />
-              <input type="text" id="people-numbers" class="w-100" />
+              <!-- <img src="./images/icon-person.svg" id="person" alt="" /> -->
+              <input
+                type="text"
+                id="people-numbers"
+                class="w-100"
+                placeholder="Number of person"
+              />
             </div>
             <div class="col-md-6">
               <div class="tipTotal-box py-5">
@@ -58,7 +68,9 @@
                       <p>/person</p>
                     </div>
                     <div class="col-md-6">
-                      <h1 class="tiptotal-price" id="tip">$0.00</h1>
+                      <h1 class="tiptotal-price">
+                        $<span id="tip">0.00</span>
+                      </h1>
                     </div>
                   </div>
 
@@ -68,7 +80,9 @@
                       <p>/person</p>
                     </div>
                     <div class="col-md-6">
-                      <h1 class="tiptotal-price" id="grand-total">$0.00</h1>
+                      <h1 class="tiptotal-price">
+                        $<span id="grand-total">0.00</span>
+                      </h1>
                     </div>
                   </div>
                 </div>
