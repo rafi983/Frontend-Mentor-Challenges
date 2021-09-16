@@ -12,14 +12,16 @@ function updateTotal() {
 
     const tipAmount = parseFloat(tipAmountField.innerText);
 
-    totalAmount.innerText = inputBillAmount + tipAmount;
+    totalAmount.innerText = (inputBillAmount + tipAmount).toFixed(2);
 
     inputBill.value = "";
   }
 }
 
 function calcTip(tipValue) {
-  tipAmountField.innerText = tipValue * parseFloat(inputBill.value);
+  tipAmountField.innerText = (tipValue * parseFloat(inputBill.value)).toFixed(
+    2
+  );
 }
 
 document.getElementById("tip5").addEventListener("click", () => {
