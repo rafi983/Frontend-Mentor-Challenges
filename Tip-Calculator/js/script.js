@@ -1,16 +1,21 @@
+document.querySelector(".person-num-warning").style.display = "none";
+
 const calcBillBtn = document.querySelector(".calcBillBtn");
 const inputBill = document.getElementById("input-bill");
 const tipAmountField = document.getElementById("tip");
 const totalAmount = document.getElementById("grand-total");
 
 function updateTotal() {
-  if (inputBill.value == "") {
-    alert("please insert a bill");
+  const inputBillAmount = parseFloat(inputBill.value);
+
+  const tipAmount = parseFloat(tipAmountField.innerText);
+  if (!numOfPersons()) {
+    document.querySelector(".person-num-warning").style.display = "block";
+    tipAmountField.innerText = "0.00";
+    totalAmount.innerText = "0.00";
+    return;
   } else {
-    const inputBillAmount = parseFloat(inputBill.value);
-
-    const tipAmount = parseFloat(tipAmountField.innerText);
-
+    document.querySelector(".person-num-warning").style.display = "none";
     totalAmount.innerText = (
       inputBillAmount / numOfPersons() +
       tipAmount
@@ -22,6 +27,10 @@ function updateTotal() {
 }
 
 function calcTip(tipValue) {
+  if (document.getElementById("people-numbers").value === "") {
+    inputBill.value = "";
+    return;
+  }
   tipAmountField.innerText = (
     tipValue * parseFloat(inputBill.value / numOfPersons())
   ).toFixed(2);

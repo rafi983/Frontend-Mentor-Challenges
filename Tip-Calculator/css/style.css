@@ -62,15 +62,8 @@ main {
   background-color: hsl(189, 41%, 97%);
   color: hsl(184, 14%, 56%);
 }
-#dollar {
-  position: absolute;
-  top: 72px;
-  left: 40px;
-}
-#person {
-  position: absolute;
-  top: 345px;
-  left: 40px;
+.person-num-warning {
+  margin: 1rem 0 0 19rem;
 }
 .tipTotal-box {
   width: 400px;
