@@ -5,6 +5,10 @@ const inputBill = document.getElementById("input-bill");
 const tipAmountField = document.getElementById("tip");
 const totalAmount = document.getElementById("grand-total");
 
+document.getElementById("input-bill").addEventListener("focus", () => {
+  document.querySelector(".person-num-warning").style.display = "none";
+});
+
 function updateTotal() {
   const inputBillAmount = parseFloat(inputBill.value);
 
