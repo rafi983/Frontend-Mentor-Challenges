@@ -78,4 +78,5 @@ main {
 .tiptotal-price {
   color: hsl(172, 67%, 45%);
   font-weight: 700;
+  direction: RTL;
 }
