@@ -35,6 +35,11 @@ function numOfPersons() {
   return finalPersonsInNum;
 }
 
+document.querySelector(".reset-btn").addEventListener("click", () => {
+  tipAmountField.innerText = "0.00";
+  totalAmount.innerText = "0.00";
+});
+
 document.getElementById("tip5").addEventListener("click", () => {
   calcTip(0.05);
   updateTotal();
