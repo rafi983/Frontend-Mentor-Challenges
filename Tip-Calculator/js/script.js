@@ -1,10 +1,9 @@
 const calcBillBtn = document.querySelector(".calcBillBtn");
 const inputBill = document.getElementById("input-bill");
 const tipAmountField = document.getElementById("tip");
+const totalAmount = document.getElementById("grand-total");
 
 function updateTotal() {
-  const totalAmount = document.getElementById("grand-total");
-
   if (inputBill.value == "") {
     alert("please insert a bill");
   } else {
@@ -12,16 +11,28 @@ function updateTotal() {
 
     const tipAmount = parseFloat(tipAmountField.innerText);
 
-    totalAmount.innerText = (inputBillAmount + tipAmount).toFixed(2);
+    totalAmount.innerText = (
+      inputBillAmount / numOfPersons() +
+      tipAmount
+    ).toFixed(2);
 
     inputBill.value = "";
+    document.getElementById("people-numbers").value = "";
   }
 }
 
 function calcTip(tipValue) {
-  tipAmountField.innerText = (tipValue * parseFloat(inputBill.value)).toFixed(
-    2
-  );
+  tipAmountField.innerText = (
+    tipValue * parseFloat(inputBill.value / numOfPersons())
+  ).toFixed(2);
+}
+
+function numOfPersons() {
+  const personInNumber = document.getElementById("people-numbers").value;
+
+  const finalPersonsInNum = Number(personInNumber);
+
+  return finalPersonsInNum;
 }
 
 document.getElementById("tip5").addEventListener("click", () => {
