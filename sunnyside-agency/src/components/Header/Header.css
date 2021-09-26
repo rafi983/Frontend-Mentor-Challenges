@@ -12,3 +12,14 @@
     top: 17rem;
     left: 17rem;
 }
+@media only screen and (max-width: 992px) {
+.header-title {
+    text-align: center;
+}
+    .svg-image {
+        position: absolute;
+        top: 8rem;
+        left: 10rem;
+    }
+
+}

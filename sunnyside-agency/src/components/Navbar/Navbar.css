@@ -3,7 +3,6 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 .nav-container  a{
     color: hsl(0, 0%, 100%) !important;
@@ -12,5 +11,13 @@
 }
 .btn-contact {
     background: hsl(0, 0%, 100%);
-
+}
+@media only screen and (max-width: 992px) {
+    .nav-container {
+        background: url("../../images/desktop/image-header.jpg");
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
