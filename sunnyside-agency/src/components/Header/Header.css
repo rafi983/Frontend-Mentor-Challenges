@@ -1,0 +1,14 @@
+.header-content {
+    position: relative;
+}
+
+.header-title {
+    letter-spacing: 0.8rem;
+    margin-top: 2rem;
+}
+
+.svg-image {
+    position: absolute;
+    top: 17rem;
+    left: 17rem;
+}
